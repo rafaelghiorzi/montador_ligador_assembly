@@ -9,10 +9,5 @@ montador: src/montador.cpp src/assembler.cpp src/assembler.hpp
 ligador: src/ligador.cpp src/assembler.cpp src/assembler.hpp
 	$(CXX) $(CXXFLAGS) src/ligador.cpp src/assembler.cpp -o ligador
 
-test: all
-	bash testes/rodar_testes.sh
-
 clean:
 	rm -f montador ligador
-
-.PHONY: all test clean

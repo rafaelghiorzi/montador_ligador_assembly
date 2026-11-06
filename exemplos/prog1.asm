@@ -1,0 +1,15 @@
+; Modulo principal: le dois numeros e passa o controle para SOMADOR.
+PRINCIPAL: BEGIN
+SECAO TEXT
+SOMADOR: EXTERN
+PUBLIC N1
+PUBLIC N2
+PUBLIC FIM
+       INPUT N1
+       INPUT N2
+       JMP SOMADOR
+FIM:   STOP
+SECAO DATA
+N1:    SPACE
+N2:    SPACE
+END
